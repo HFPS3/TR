@@ -160,3 +160,54 @@ svg{
         box-shadow: 0 0 200px rgba(0, 255, 255, 0.5) inset;
     }
 }
+@media screen and (max-width: 700px) {
+
+  /* width */
+  ::-webkit-scrollbar {
+      width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+      background: var(--blue);
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      background: var(--skyblue);
+  }
+
+  body {
+      overflow-y: scroll;
+      overflow-x: hidden;
+      height: 100%;
+  }
+
+  main {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+  }
+
+  .in-section {
+      padding-bottom: 8rem;
+      width: 100%;
+  }
+
+  .out-section {
+      width: 100%;
+  }
+
+  .radiation {
+      background-size: 0%;
+  }
+
+  footer {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      padding: 2rem 0rem;
+      
+  }
+}
