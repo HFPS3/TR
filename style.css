@@ -114,4 +114,49 @@ svg{
       opacity: 0;
     }
   }
-  
+  @keyframes blink-lines {
+    0% {
+        opacity: 0.85;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    50.1% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes glowing {
+    from {
+        box-shadow: 0 0 150px rgba(0, 255, 255, 0.2) inset;
+    }
+
+    to {
+        box-shadow: 0 0 200px rgba(0, 255, 255, 0.5) inset;
+    }
+}
