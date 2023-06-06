@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <html>
-  <audio autoplay src="peaches.mp3"></audio>
   <head>
         <title>Invitación Cumple Jesus</title>
         <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
+    <audio id="audio" src="peaches.mp3" type="audio/mpeg"></audio>
+    <button onclick="playAudio()">Presiona </button>
+
+  <script>
+  function playAudio() {
+    var audio = document.getElementById("audio");
+    audio.play();
+  }
+   </script>
         <header>
           <nav>
             <div class =figurita></div>
